@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact CNA Financial Planning for free financial consultations. Call 07397852939 or email Chris@cnafinancial.co.uk. Book your appointment today.">
+    <title>Contact Us | CNA Financial Planning</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="CNA Financial Planning Logo">
+                <span>CNA Financial Planning</span>
+            </a>
+            <nav>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="workshops.html">Workshops</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Let's Start Your Financial Planning Journey</h1>
+            <p>Free initial consultations—no obligation, just expert guidance</p>
+        </div>
+    </section>
+
+    <!-- Contact Methods -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-methods">
+                <div class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3>Call Us</h3>
+                    <a href="tel:07397852939">07397852939</a>
+                    <p style="margin-top: 1rem; color: var(--medium-grey);">
+                        Available: Mon-Fri 9am-6pm<br>
+                        Saturday by appointment
+                    </p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email Us</h3>
+                    <a href="mailto:Chris@cnafinancial.co.uk">Chris@cnafinancial.co.uk</a>
+                    <p style="margin-top: 1rem; color: var(--medium-grey);">
+                        We aim to respond<br>
+                        within 24 hours
+                    </p>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">🌐</div>
+                    <h3>Website</h3>
+                    <a href="https://CNAfinancial.co.uk">CNAfinancial.co.uk</a>
+                    <p style="margin-top: 1rem; color: var(--medium-grey);">
+                        Book consultations<br>
+                        and request workshops
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Primary Contact Form -->
+    <section class="section section-light">
+        <div class="container">
+            <div style="max-width: 700px; margin: 0 auto;">
+                <h2 class="text-center mb-3">Book Your Free Consultation</h2>
+                
+                <div class="card">
+                    <form id="consultation-form">
+                        <div class="grid grid-2">
+                            <div class="form-group">
+                                <label for="first-name">First Name <span class="required">*</span></label>
+                                <input type="text" id="first-name" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="last-name">Last Name <span class="required">*</span></label>
+                                <input type="text" id="last-name" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">What can we help you with? <span class="required">*</span></label>
+                            <select id="service" class="form-control" required>
+                                <option value="">Please select...</option>
+                                <option value="mortgage">Mortgage Advice</option>
+                                <option value="pension">Pension Planning</option>
+                                <option value="insurance">Insurance & Protection</option>
+                                <option value="investing">Saving & Investing</option>
+                                <option value="will">Will Writing</option>
+                                <option value="comprehensive">Comprehensive Financial Review</option>
+                                <option value="workshop">Workshop Request</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="details">Additional Details (Optional)</label>
+                            <textarea id="details" class="form-control" placeholder="Is there anything specific you'd like to discuss?"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Preferred Contact Method <span class="required">*</span></label>
+                            <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                                <div class="checkbox-group">
+                                    <input type="radio" id="contact-phone" name="contact-method" value="phone" required>
+                                    <label for="contact-phone">Phone</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="radio" id="contact-email" name="contact-method" value="email">
+                                    <label for="contact-email">Email</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="radio" id="contact-either" name="contact-method" value="either">
+                                    <label for="contact-either">Either</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Preferred Consultation Format <span class="required">*</span></label>
+                            <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+                                <div class="checkbox-group">
+                                    <input type="radio" id="format-person" name="format" value="in-person" required>
+                                    <label for="format-person">In-person</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="radio" id="format-virtual" name="format" value="virtual">
+                                    <label for="format-virtual">Virtual (Video)</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="radio" id="format-phone" name="format" value="phone">
+                                    <label for="format-phone">Phone</label>
+                                </div>
+                                <div class="checkbox-group">
+                                    <input type="radio" id="format-no-pref" name="format" value="no-preference">
+                                    <label for="format-no-pref">No preference</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <label for="consent">I agree to be contacted by CNA Financial Planning regarding my enquiry <span class="required">*</span></label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">I would like to receive occasional financial tips and workshop announcements</label>
+                            </div>
+                        </div>
+                        
+                        <p style="font-size: 0.9rem; color: var(--medium-grey); margin-bottom: 1.5rem;">
+                            We respect your privacy. Your information will never be shared with third parties.
+                        </p>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Request Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center mb-3">Frequently Asked Questions</h2>
+            
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is the initial consultation really free?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, absolutely. We offer a free, no-obligation initial consultation to understand your needs and explain how we can help. There's no pressure to proceed.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What should I bring to my consultation?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For the first meeting, just bring yourself and any questions you have. If you want us to review existing policies or pensions, bringing those documents is helpful but not essential.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How are you paid for your services?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We operate on a transparent fee structure. We'll always explain our fees clearly before you commit to anything. Different services may have different fee structures, which we'll discuss during your consultation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do I need to have a lot of money to work with a financial advisor?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Not at all. We work with clients at all income levels and life stages. Whether you're just starting to save or planning retirement, we can help.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Are you independent or tied to specific companies?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We are independent advisors, which means we can recommend products from across the whole market, not just specific providers. This ensures you get the best solution for your needs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long does the financial planning process take?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>It depends on your needs. Simple mortgage advice might be resolved in a few weeks, while comprehensive financial planning is an ongoing process. We'll outline timescales during your consultation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer virtual consultations?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer flexible consultation options including in-person meetings, video calls, and telephone consultations. Choose whatever works best for your schedule and preferences.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What's the difference between will writing and the other services?</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Will writing is not regulated by the Financial Conduct Authority, while our financial advisory services (mortgages, pensions, insurance, investments) are FCA regulated. Both are important aspects of comprehensive financial planning.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Hours -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="text-center mb-3">When We're Available</h2>
+            
+            <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+                <div class="card">
+                    <h3>Office Hours</h3>
+                    <p style="font-size: 1.1rem; margin: 1.5rem 0;">
+                        <strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM<br>
+                        <strong>Saturday:</strong> By appointment only<br>
+                        <strong>Sunday:</strong> Closed
+                    </p>
+                    <p style="color: var(--medium-grey);">
+                        For urgent matters outside office hours, email <a href="mailto:Chris@cnafinancial.co.uk">Chris@cnafinancial.co.uk</a> and we'll respond as soon as possible.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Signals -->
+    <section class="section section-navy">
+        <div class="container">
+            <h2 class="text-center mb-3">Your Security is Our Priority</h2>
+            
+            <div class="grid grid-4">
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🛡️</div>
+                    <h4>FCA Regulated</h4>
+                    <p>Authorised and regulated by the Financial Conduct Authority</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔒</div>
+                    <h4>Data Protection</h4>
+                    <p>Compliant with UK GDPR regulations</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">📋</div>
+                    <h4>Professional Indemnity</h4>
+                    <p>Fully insured for your peace of mind</p>
+                </div>
+                
+                <div style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 1rem;">🔐</div>
+                    <h4>Secure Communication</h4>
+                    <p>All consultations are confidential</p>
+                </div>
+            </div>
+            
+            <p class="text-center mt-3">
+                All consultations are confidential. We adhere to strict data protection regulations and professional standards.
+            </p>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section section-light">
+        <div class="container text-center">
+            <h2 class="mb-2">Take the First Step Today</h2>
+            <p class="mb-3" style="font-size: 1.1rem;">Join hundreds of clients who've achieved financial peace of mind with CNA Financial Planning</p>
+            <div class="hero-buttons">
+                <a href="#consultation-form" class="btn btn-primary">Book Free Consultation</a>
+                <a href="tel:07397852939" class="btn btn-secondary">Call 07397852939</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h4>CNA Financial Planning</h4>
+                    <p>Financial Wellbeing Support</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Facebook">f</a>
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="workshops.html">Workshops</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#wills">Wills</a></li>
+                        <li><a href="services.html#mortgages">Mortgages</a></li>
+                        <li><a href="services.html#insurance">Insurance</a></li>
+                        <li><a href="services.html#investing">Saving/Investing</a></li>
+                        <li><a href="services.html#pensions">Pensions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:07397852939">07397852939</a></li>
+                        <li><a href="mailto:Chris@cnafinancial.co.uk">Chris@cnafinancial.co.uk</a></li>
+                        <li><a href="https://CNAfinancial.co.uk">CNAfinancial.co.uk</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>CNA Financial Planning is regulated by the Financial Conduct Authority</p>
+                <p>&copy; 2026 CNA Financial Planning. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
