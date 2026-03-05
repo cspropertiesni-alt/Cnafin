@@ -223,8 +223,39 @@ img {
 
 /* ===== HERO SECTION ===== */
 
-.hero {
+/* ===== HERO SECTION ===== */
+.hero-home {
     background-image: url('../images/couple-walking-beach.jpg');
+}
+/* ADD THIS NEW SECTION */
+
+.hero:not(.hero-home) {
+    background: linear-gradient(135deg, var(--primary-navy) 0%, #2a3f7a 100%);
+    min-height: 300px;  /* Much smaller than home page */
+    padding: 4rem 0;
+    align-items: center;  /* Center content instead of bottom */
+    justify-content: center;
+    text-align: center;
+}
+
+.hero:not(.hero-home) .container {
+    display: block;  /* Override the flex layout */
+    text-align: center;
+}
+
+.hero:not(.hero-home) h1 {
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero:not(.hero-home) p {
+    color: var(--white);
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.hero {
     background-size: cover;
     background-position: center 30%;
     background-repeat: no-repeat;
