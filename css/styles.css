@@ -222,33 +222,74 @@ img {
 .mb-3 { margin-bottom: 3rem; }
 
 /* ===== HERO SECTION ===== */
+
 .hero {
-    background-image: linear-gradient(rgba(26, 31, 77, 0.7), rgba(26, 31, 77, 0.7)), url('../images/couple-walking-beach.jpg');
+    background-image: url('../images/couple-walking-beach.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: center 30%;
     background-repeat: no-repeat;
-    color: var(--white);
-    padding: 8rem 0;
-    text-align: center;
-    min-height: 600px;
+    min-height: 700px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    position: relative;
 }
 
-.hero h1 {
+.hero-box {
+    background-color: var(--primary-navy);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    max-width: 500px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    margin-bottom: 3rem;
     color: var(--white);
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    opacity: 0.75;  /* ADD THIS - controls box opacity (0.0 to 1.0) */
+    margin-left: 0;  /* ADD THIS - controls left position */
 }
 
-.hero p {
+.hero .container {
+    display: flex;
+    justify-content: flex-start;  /* Aligns box to the left */
+    align-items: flex-end;  /* Keeps it at the bottom */
+    height: 100%;
+    margin: 0;  /* ADD THIS LINE */
+    padding-left: 2rem;  /* ADD THIS LINE */
+    padding-right: 2rem;  /* ADD THIS LINE */
+}
+
+.hero-box h1 {
+    color: var(--white);
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-box p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+    line-height: 1.6;
+    color: var(--white);
+}
+
+/* ===== INTRO SECTION ===== */
+.intro-section {
+    background: linear-gradient(135deg, var(--primary-navy) 0%, #2a3f7a 100%);
+    color: var(--white);
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.intro-section h2 {
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.intro-section p {
     font-size: 1.25rem;
     margin-bottom: 2rem;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
 }
 
 .hero-buttons {
@@ -779,15 +820,32 @@ select.form-control {
     }
 
     .hero {
-        padding: 5rem 0;
         min-height: 500px;
     }
 
-    .hero h1 {
+    .hero-box {
+        padding: 2rem 1.5rem;
+        margin-bottom: 2rem;
+        max-width: 100%;
+    }
+
+    .hero-box h1 {
         font-size: 1.75rem;
     }
 
-    .hero p {
+    .hero-box p {
+        font-size: 1rem;
+    }
+
+    .intro-section {
+        padding: 3rem 0;
+    }
+
+    .intro-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .intro-section p {
         font-size: 1rem;
     }
 
