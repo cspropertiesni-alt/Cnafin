@@ -228,7 +228,7 @@ img {
     background-size: cover;
     background-position: center 30%;
     background-repeat: no-repeat;
-    min-height: 680px;
+    min-height: 650px;
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -240,7 +240,7 @@ img {
     border-radius: var(--border-radius);
     max-width: 500px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.4);
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     color: var(--white);
     opacity: 0.75;  /* ADD THIS - controls box opacity (0.0 to 1.0) */
     margin-left: 0;  /* ADD THIS - controls left position */
