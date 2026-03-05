@@ -228,7 +228,7 @@ img {
     background-size: cover;
     background-position: center 30%;
     background-repeat: no-repeat;
-    min-height: 700px;
+    min-height: 680px;
     display: flex;
     align-items: flex-end;
     position: relative;
