@@ -703,7 +703,7 @@ select.form-control {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
-    align-items: center;
+    align-items: top;
     margin-bottom: 4rem;
 }
 
